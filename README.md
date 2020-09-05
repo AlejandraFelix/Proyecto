@@ -1,5 +1,1 @@
-Tarjeta_de_puntos
-recolectar puntos
-sumar puntos dependiendo de la compra
-al llegar a cierta cantidad de puntos obtener descuentos 
-al juntar todos los requisitos de la tarjeta botener un premio
+3 diferentes tarjetas de puntos en las cuales dependiendo de la compra y de la tarjeta te van a ir regalando puntos con los cuales luego vas a poder recibir descuentos en ciertos productos e incluso recibir premios y cosas gratis.
