@@ -1,17 +1,17 @@
 def tarjeta_bronce():
     compra = float(input("Dame el valor de tu última compra:"))
     puntos=compra*.10
-    return("tienes",puntos,"puntos")
+    print("tienes",puntos,"puntos")
 
 def tarjeta_plata():
     compra = float(input("Dame el valor de tu última compra:"))
     puntos=compra*.15
-    return("tienes",puntos,"puntos")
+    print("tienes",puntos,"puntos")
 
 def tarjeta_oro():
     compra = float(input("Dame el valor de tu última compra:"))
     puntos=compra*.20
-    return("tienes",puntos,"puntos")
+    print("tienes",puntos,"puntos")
     
 
 def menu():
@@ -33,6 +33,7 @@ def main():
             tarjeta_bronce()
         elif opcion == 4:
             print("Usted no cuenta con una tarjeta participante")
+            continua = False
             
         else:
             print("ERROR OPCION INVALIDA")
