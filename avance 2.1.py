@@ -1,17 +1,33 @@
+import random
+
 def tarjeta_bronce():
     compra = float(input("Dame el valor de tu última compra:"))
     puntos=compra*.10
-    print("tienes",puntos,"puntos")
+    if compra >= 500:
+        n = random.randint(1,10)
+        print("se te sumaron",n,"puntos")
+
+    print("tienes",puntos+n,"puntos")
 
 def tarjeta_plata():
     compra = float(input("Dame el valor de tu última compra:"))
     puntos=compra*.15
-    print("tienes",puntos,"puntos")
+    if compra >= 500:
+        n = random.randint(1,10)
+        print("se te sumaron",n,"puntos")
+
+    print("tienes",puntos+n,"puntos")
+    
 
 def tarjeta_oro():
     compra = float(input("Dame el valor de tu última compra:"))
     puntos=compra*.20
-    print("tienes",puntos,"puntos")
+    if compra >= 500:
+        n = random.randint(1,10)
+        print("se te sumaron",n,"puntos")
+
+    print("tienes",puntos+n,"puntos")
+    
     
 
 def menu():
