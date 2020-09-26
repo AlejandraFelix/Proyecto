@@ -35,7 +35,7 @@ def menu():
     print("2-Tarjeta plata")
     print("3-Tarjeta bronce")
     
-
+#En esta parte estoy utilizando ciclos
 def main():
     continua = True
     while continua:
