@@ -28,12 +28,16 @@ def tarjeta_oro():
 
     print("tienes",puntos+n,"puntos")
     
-    
+lista_beneficios_oro = ["descuentos","premios","meses sin intereses","promociones"]
+ 
+lista_beneficios_plata = ["promociones","descuentos","meses sin intereses"]
+
+lista_beneficios_bronce = ["promociones","meses sin intereses"]
 
 def menu():
-    print("1-Tarjeta oro")
-    print("2-Tarjeta plata")
-    print("3-Tarjeta bronce")
+    print("1-Tarjeta oro",lista_beneficios_oro)
+    print("2-Tarjeta plata",lista_beneficios_plata)
+    print("3-Tarjeta bronce",lista_beneficios_bronce)
     
 #En esta parte estoy utilizando ciclos
 def main():
