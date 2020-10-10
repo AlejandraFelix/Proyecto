@@ -1,32 +1,42 @@
 import random
 
 def tarjeta_bronce():
-    compra = float(input("Dame el valor de tu última compra:"))
+    print("Dame el valor de tu última compra:")
+    compra = abs(float(input()))
     puntos=compra*.10
     if compra >= 500:
         n = random.randint(1,10)
         print("se te sumaron",n,"puntos")
-
-    print("tienes",puntos+n,"puntos")
+        print("tienes",puntos+n,"puntos")
+    
+    else:
+        print("no sumaste puntos porque tu compra fue menor a $500")
 
 def tarjeta_plata():
-    compra = float(input("Dame el valor de tu última compra:"))
+    print("Dame el valor de tu última compra:")
+    compra = abs(float(input()))
     puntos=compra*.15
     if compra >= 500:
         n = random.randint(1,10)
         print("se te sumaron",n,"puntos")
-
-    print("tienes",puntos+n,"puntos")
+        print("tienes",puntos+n,"puntos")
+        
+    else:
+        print("no sumaste puntos porque tu compra fue menor a $500")
     
 
 def tarjeta_oro():
-    compra = float(input("Dame el valor de tu última compra:"))
+    print("Dame el valor de tu última compra:")
+    compra = abs(float(input()))
     puntos=compra*.20
     if compra >= 500:
         n = random.randint(1,10)
         print("se te sumaron",n,"puntos")
+        print("tienes",puntos+n,"puntos")
+        
+    else:
+        print("no sumaste puntos porque tu compra fue menor a $500")
 
-    print("tienes",puntos+n,"puntos")
     
 lista_beneficios_oro = ["descuentos","premios","meses sin intereses","promociones"]
  
@@ -52,9 +62,9 @@ def main():
         elif opcion == 3:
             tarjeta_bronce()
         elif opcion == 4:
-            print("Usted no cuenta con una tarjeta participante")
-            continua = False
+            print("Saca tu tarjeta participante")
             
+           
         else:
             print("ERROR OPCION INVALIDA")
             continua  = False
