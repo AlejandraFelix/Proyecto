@@ -1,5 +1,17 @@
+"""
+Tarjetas de descuento para tiendas
+Cada tarjeta tiene difententes
+descuentos y dependiendo de cada
+una y del valor de tu compra se te dan puntos
+"""
+
+#bibliotecas
 import random
 
+"""
+============= funciones para las tarjetas=============
+"""
+     
 def tarjeta_bronce():
     print("Dame el valor de tu última compra:")
     compra = abs(float(input()))
@@ -11,6 +23,13 @@ def tarjeta_bronce():
     
     else:
         print("no sumaste puntos porque tu compra fue menor a $500")
+
+"""
+     (uso de operadores, uso de funciones)
+     se recibe el valor de la compra y se multiplica por .10
+     si la compra es mayor a 500 el random elige un número del
+     1 al 10 y se le agrega a los puntos
+     """
 
 def tarjeta_plata():
     print("Dame el valor de tu última compra:")
@@ -24,7 +43,13 @@ def tarjeta_plata():
     else:
         print("no sumaste puntos porque tu compra fue menor a $500")
     
-
+    """
+     (uso de operadores, uso de funciones)
+     se recibe el valor de la compra y se multiplica por .15
+     si la compra es mayor a 500 el random elige un número del
+     1 al 10 y se le agrega a los puntos
+     """
+ 
 def tarjeta_oro():
     print("Dame el valor de tu última compra:")
     compra = abs(float(input()))
@@ -37,7 +62,14 @@ def tarjeta_oro():
     else:
         print("no sumaste puntos porque tu compra fue menor a $500")
 
-    
+"""
+     (uso de operadores, uso de funciones)
+     se recibe el valor de la compra y se multiplica por .20
+     si la compra es mayor a 500 el random elige un número del
+     1 al 10 y se le agrega a los puntos
+     """
+
+ #listas con beneficios de las tarjetas   
 lista_beneficios_oro = ["descuentos","premios","meses sin intereses","promociones"]
  
 lista_beneficios_plata = ["promociones","descuentos","meses sin intereses"]
@@ -49,7 +81,10 @@ def menu():
     print("2-Tarjeta plata",lista_beneficios_plata)
     print("3-Tarjeta bronce",lista_beneficios_bronce)
     
-#En esta parte estoy utilizando ciclos
+"""
+============= parte principal del programa===========
+"""
+
 def main():
     continua = True
     while continua:
